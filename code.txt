@@ -1,0 +1,69 @@
+src/
+├── api/                 # Quản lý các hàm gọi API
+│   ├── index.js         # Tập trung tất cả các endpoint API
+│   ├── auth.js          # API liên quan đến xác thực
+│   ├── products.js      # API quản lý sản phẩm
+│   ├── orders.js        # API quản lý đơn hàng
+│   ├── users.js         # API quản lý người dùng
+│   └── ...              # Các module API khác
+├── assets/              # Chứa hình ảnh, icon, file tĩnh
+│   ├── images/          # Hình ảnh sản phẩm
+│   ├── icons/           # Icon SVG
+│   └── styles/          # File CSS/SASS hoặc global styles
+├── components/          # Các component tái sử dụng
+│   ├── common/          # Các component chung (Button, Modal, Loader)
+│   ├── layout/          # Header, Sidebar, Footer
+│   ├── products/        # Component liên quan đến sản phẩm
+│   │   ├── ProductCard.js  # Thẻ hiển thị sản phẩm
+│   │   ├── ProductList.js  # Danh sách sản phẩm
+│   │   └── ProductDetail.js # Chi tiết sản phẩm
+│   ├── orders/          # Component liên quan đến đơn hàng
+│   └── ...              # Các component cụ thể
+├── context/             # Quản lý state toàn cục (Context API, Reducer)
+│   ├── AuthContext.js   # State quản lý xác thực
+│   ├── CartContext.js   # State quản lý giỏ hàng
+│   ├── ThemeContext.js  # State quản lý theme
+│   └── ...              # Các context khác
+├── hooks/               # Các custom hooks
+│   ├── useAuth.js       # Hook quản lý xác thực
+│   ├── useFetch.js      # Hook gọi API
+│   ├── useCart.js       # Hook quản lý giỏ hàng
+│   └── ...              # Các hook khác
+├── pages/               # Các trang chính của ứng dụng
+│   ├── Dashboard/       # Trang Dashboard
+│   │   ├── Dashboard.js 
+│   │   └── Dashboard.module.css
+│   ├── Login/           # Trang đăng nhập
+│   ├── Products/        # Trang quản lý sản phẩm
+│   │   ├── Products.js
+│   │   └── Products.module.css
+│   ├── Orders/          # Trang quản lý đơn hàng
+│   │   ├── Orders.js
+│   │   └── Orders.module.css
+│   ├── Users/           # Trang quản lý người dùng
+│   │   ├── Users.js
+│   │   └── Users.module.css
+│   └── ...              # Các trang khác
+├── routes/              # Quản lý định tuyến
+│   ├── ProtectedRoute.js # Route cần đăng nhập
+│   └── AppRoutes.js     # Cấu hình route chính
+├── services/            # Các service xử lý logic
+│   ├── authService.js   # Xử lý logic đăng nhập
+│   ├── productService.js# Xử lý logic sản phẩm
+│   ├── orderService.js  # Xử lý logic đơn hàng
+│   └── ...              # Các service khác
+├── store/               # Quản lý state với Redux/Zustand/Recoil (nếu dùng)
+│   ├── slices/          # Các slice của Redux
+│   │   ├── productSlice.js  # State sản phẩm
+│   │   ├── orderSlice.js    # State đơn hàng
+│   │   └── userSlice.js     # State người dùng
+│   ├── store.js         # Cấu hình Redux store
+│   └── ...
+├── utils/               # Các hàm tiện ích (helpers)
+│   ├── formatDate.js    # Hàm định dạng ngày
+│   ├── validate.js      # Hàm validate dữ liệu
+│   ├── calculateTotal.js# Hàm tính toán tổng giỏ hàng
+│   └── ...
+├── App.js               # Component chính của ứng dụng
+├── index.js             # Điểm bắt đầu của React
+└── setupTests.js        # Cấu hình test (Jest/Testing Library)
